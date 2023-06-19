@@ -1,0 +1,12 @@
+import '../styles/Container.scss'
+
+
+function Container() {
+  return (
+    <>
+      <div className='container'></div>
+    </>
+  )
+}
+
+export default Container
