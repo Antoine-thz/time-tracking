@@ -1,0 +1,59 @@
+@mixin position(){
+  padding-left: 30px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 15px;
+  color: white;
+  grid-row: 1 / span 2;
+  background-color: hsl(235, 46%, 20%);
+  &__top{
+    height: 65%;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 15px;
+    @include position();
+    &__img{
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      background-color: aliceblue;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    &__report{
+      font-size: 0.8rem;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    &__name{
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  &__bottom{
+    height: 35%;
+    @include position();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    div{
+          p{
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 0;
+
+      &:hover{
+        background-color: aliceblue;
+      }
+    }
+    }
+
+  }
+}

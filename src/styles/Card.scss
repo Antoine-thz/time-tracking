@@ -1,0 +1,46 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white; 
+  background-color: aqua;
+  &__icone{
+    height: 60px;
+  }
+  
+  &__infos{
+    height: 100%;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+  }
+
+}
+
+
+
+
+.top{
+  display: flex;
+
+  &__title{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+.time{
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.past{
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+}
