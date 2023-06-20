@@ -1,22 +1,37 @@
 .card{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   border-radius: 15px;
-  overflow: hidden;
   color: white; 
-  background-color: aqua;
-  &__icone{
-    height: 60px;
-  }
+  height: 225px;
+
+
   
   &__infos{
     height: 100%;
+    border-radius: 15px;
     background-color: hsl(235, 46%, 20%);
     display: flex;
     flex-direction: column;
-    object-fit: cover;
+    &:hover{
+      background-color: hsl(235, 45%, 61%);
+    }
   }
+  &__img{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    img{
+      position: relative;
+      width: 30%;
+      top:8px;
+      right: 20px;
+    }
+  }
+
 
 }
 
@@ -25,22 +40,31 @@
 
 .top{
   display: flex;
+  justify-content: space-between;
+  padding: 22px;
 
   &__title{
     font-weight: 400;
     font-size: 1.2rem;
     margin: 0;
   }
+
+  span{
+    cursor: pointer;
+  }
 }
 
 .time{
   font-weight: 300;
-  font-size: 2.8rem;
+  font-size: 3.4rem;
   margin: 0;
+  padding-left: 30px;
 }
 
 .past{
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 0;
+  padding-top: 10px;
+  padding-left: 25px;
 }
